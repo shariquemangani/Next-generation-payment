@@ -60,7 +60,7 @@ body::-webkit-scrollbar {
   width: 310px;
   height: 40px;
   border-radius: 10px;
-  background: url(./images/section1/discount-div-bg.png) no-repeat center;
+  background: url(../images/section1/discount-div-bg.png) no-repeat center;
   background-size: cover;
   margin-bottom: 10px;
 }
