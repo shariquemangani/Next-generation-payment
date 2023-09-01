@@ -134,8 +134,8 @@
     text-align: center !important;
   } */
   .sect4-left {
-    text-align: center !important;
-    align-items: center;
+    /* text-align: center !important;
+    align-items: center; */
   }
   .sect3-right {
     display: flex;
@@ -144,6 +144,9 @@
     /* justify-content: center; */
   }
   .sect3-right h2 {
+    text-align: center;
+  }
+  .sect3-right p {
     text-align: center;
   }
   .testimonial1 p,

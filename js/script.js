@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
   counter("count3", 0, 230, maxDuration, maxDuration);
 });
 
-
 const blob = document.querySelector("#blob");
 const body = document.querySelector("body");
 
