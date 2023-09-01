@@ -9,6 +9,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background: #00040f !important;
   font-family: "Poppins", sans-serif !important;
   color: white !important;
@@ -529,31 +530,47 @@ i {
 .sect4-right:hover .img-bg {
   box-shadow: 1px 0px 50px #5ce1e6;
 }
-
-@keyframes spin-reverse {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 .sec4-right-img-div1 {
   position: absolute;
   left: 80px;
   top: 0px;
-  width: 200px;
+  width: 180px;
   cursor: pointer;
-  transition: 0.5s !important;
+  transition: 0.5s linear !important;
   border-radius: 25px;
-  animation: spin-reverse 20s infinite linear;
-  /* animation:spin 10s infinite linear; */
+  animation: spin-reverse-1 20s infinite linear;
 }
-.sec4-right-img-div1:hover {
+@keyframes spin-reverse-1 {
+  0% {
+    transform: rotate(360deg);
+    width: 220px;
+  }
+  25% {
+    transform: rotate(270deg);
+    width: 220px;
+  }
+
+  30% {
+    transform: rotate(252deg);
+    width: 220px;
+  }
+  32% {
+    transform: rotate(245deg);
+    width: 180px;
+  }
+  98% {
+    transform: rotate(7deg);
+    width: 180px;
+  }
+  100% {
+    transform: rotate(0deg);
+    width: 220px;
+  }
+}
+/* .sec4-right-img-div1:hover {
   width: 220px;
   box-shadow: 0px 0px 10px #5ce1e6;
-}
+} */
 .sec4-right-img1 {
   width: 100%;
   transition: 0.5s !important;
@@ -565,15 +582,50 @@ i {
   top: -40px;
   cursor: pointer;
   transition: 0.5s !important;
-  width: 240px;
+  width: 210px;
   border-radius: 25px;
-  animation: spin-reverse 20s infinite linear;
+  animation: spin-reverse-2 20s infinite linear;
   z-index: 1;
 }
-.sec4-right-img-div2:hover {
+@keyframes spin-reverse-2 {
+  0% {
+    transform: rotate(360deg);
+    width: 210px;
+  }
+  25% {
+    transform: rotate(270deg);
+    width: 210px;
+  }
+  50% {
+    transform: rotate(180deg);
+    width: 210px;
+  }
+  60% {
+    transform: rotate(144deg);
+    width: 210px;
+  }
+  62% {
+    transform: rotate(137deg);
+    width: 250px;
+  }
+  75% {
+    transform: rotate(90deg);
+    width: 250px;
+  }
+  98% {
+    transform: rotate(7deg);
+    width: 250px;
+  }
+  100% {
+    transform: rotate(0deg);
+    width: 210px;
+  }
+}
+
+/* .sec4-right-img-div2:hover {
   width: 260px;
   box-shadow: 0px 0px 10px #5ce1e6;
-}
+} */
 .sec4-right-img2 {
   width: 100%;
   transition: 0.5s !important;
@@ -585,14 +637,53 @@ i {
   bottom: -100px;
   cursor: pointer;
   transition: 0.5s !important;
-  width: 230px;
+  width: 210px;
   border-radius: 25px;
-  animation: spin-reverse 20s infinite linear;
+  animation: spin-reverse-3 20s infinite linear;
 }
-.sec4-right-img-div3:hover {
+@keyframes spin-reverse-3 {
+  0% {
+    transform: rotate(360deg);
+    width: 210px;
+  }
+  25% {
+    transform: rotate(270deg);
+    width: 210px;
+  }
+  30% {
+    transform: rotate(252deg);
+    width: 210px;
+  }
+  32% {
+    transform: rotate(245deg);
+    width: 230px;
+  }
+  50% {
+    transform: rotate(180deg);
+    width: 230px;
+  }
+  60% {
+    transform: rotate(144deg);
+    width: 230px;
+  }
+  62% {
+    transform: rotate(137deg);
+    width: 210px;
+  }
+  75% {
+    transform: rotate(90deg);
+    width: 210px;
+    /* border:none; */
+  }
+  100% {
+    transform: rotate(0deg);
+    width: 210px;
+  }
+}
+/* .sec4-right-img-div3:hover {
   width: 250px;
   box-shadow: 0px 0px 10px #5ce1e6;
-}
+} */
 .sec4-right-img3 {
   width: 100%;
   transition: 0.5s !important;

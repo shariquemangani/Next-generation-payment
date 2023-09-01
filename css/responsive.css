@@ -1,6 +1,41 @@
 @media only screen and (max-width: 1800px) {
-  .section4-container{
+  .section4-container {
     /* overflow: hidden !important; */
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .sec4-right-img-div1 {
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.5s linear !important;
+  }
+
+  .sec4-right-img-div2 {
+    position: absolute;
+    right: 60px;
+    top: -30px;
+    cursor: pointer;
+    transition: 0.5s !important;
+    width: 230px;
+  }
+  .sec4-right-img-div3 {
+    position: absolute;
+    right: 500px;
+    bottom: -0px;
+    cursor: pointer;
+    transition: 0.5s !important;
+    width: 230px;
+  }
+  .testimonial1,
+  .testimonial2,
+  .testimonial3 {
+    /* padding: 30px 10px !important; */
+  }
+  .section4-container {
+    overflow: hidden;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -56,8 +91,8 @@
     position: static;
     margin-top: 20px;
   }
-  .section4-container{
-    overflow: hidden !important;
+  .section4-container {
+    /* overflow: hidden !important; */
   }
 }
 @media only screen and (max-width: 992px) {
@@ -153,7 +188,6 @@
   .testimonial2 p,
   .testimonial3 p {
     text-align: left !important;
-    
   }
 }
 
@@ -180,7 +214,7 @@
   .sect2-right-sub {
     padding: 15px 5px;
   }
-  .sect2-right-sub div p{
+  .sect2-right-sub div p {
     text-align: left !important;
   }
   .sect2-right {
