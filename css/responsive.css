@@ -1,3 +1,8 @@
+@media only screen and (max-width: 1800px) {
+  .section4-container{
+    /* overflow: hidden !important; */
+  }
+}
 @media only screen and (max-width: 1200px) {
   .sec1-left {
     /* display: flex !important;
@@ -51,6 +56,9 @@
     position: static;
     margin-top: 20px;
   }
+  .section4-container{
+    overflow: hidden !important;
+  }
 }
 @media only screen and (max-width: 992px) {
   img.ellipse1 {
@@ -77,6 +85,9 @@
   }
   .foot-left-content {
     justify-content: center;
+  }
+  .section1 {
+    /* overflow-x: hidden !important; */
   }
 }
 
@@ -119,10 +130,9 @@
   .sect4-right .img-bg {
     width: 100%;
   }
-  .sect6-content-left h1,
-  p {
+  /* .sect6-content-left h1 {
     text-align: center !important;
-  }
+  } */
   .sect4-left {
     text-align: center !important;
     align-items: center;
@@ -167,6 +177,9 @@
   .sect2-right-sub {
     padding: 15px 5px;
   }
+  .sect2-right-sub div p{
+    text-align: left !important;
+  }
   .sect2-right {
     padding: 0px !important;
   }
@@ -186,7 +199,7 @@
   }
   .sect2-right-sub {
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
   }
   .sect2-right-sub img {
     margin-right: 0px;

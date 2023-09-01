@@ -4,6 +4,9 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  /* cursor: url('../images/cursor.png'), auto !important; */
+
+  cursor: url("../images/new-icon.svg"), auto !important;
 }
 
 body {
@@ -12,6 +15,8 @@ body {
   color: white !important;
   transition: 0.3s;
   position: relative;
+  /* cursor: url('../images/cursor.png') !important; */
+
 }
 
 body::-webkit-scrollbar {
@@ -22,9 +27,26 @@ body::-webkit-scrollbar {
   padding: 24px 110px;
 }
 
+.navbar-brand img {
+  transition: transform 1s !important;
+}
+
 .nav-logo-left-text {
   color: #ddd;
   transition: 0.3s;
+  position: relative;
+  margin-left: 40px;
+}
+.nav-logo-left-text a img {
+  color: #ddd;
+  transition: 0.3s;
+  position: absolute;
+  left: -40px !important;
+  top: -5px !important;
+}
+
+.nav-logo-left-text:hover a img {
+  transform: rotate(180deg);
 }
 .nav-text:hover .nav-logo-left-text {
   color: white !important ;
@@ -33,11 +55,11 @@ body::-webkit-scrollbar {
 
 .nav-logo-right-text {
   color: #5ce1e6;
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
 
 .nav-text:hover .nav-logo-right-text {
-  text-shadow: 0px 1px 10px #5ce1e6;
+  text-shadow: 0px 1px 10px #5ce1e6 !important;
 }
 
 .collapse li {
@@ -55,6 +77,8 @@ body::-webkit-scrollbar {
 }
 
 /* /////////////////   section-1   /////////////////// */
+
+
 
 .discount-div {
   width: 310px;
@@ -214,9 +238,24 @@ i {
   background-image: radial-gradient(at 70% 40%, white, #5ce1e6, #5ce1e6);
   transition: 1s;
   z-index: 100;
+  animation: wave 5s ease-in-out infinite !important;
+}
+@keyframes wave {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
 }
 .blue-round1:hover {
-  transform: rotate(-360deg);
+  transform: rotate(-360deg) !important;
   box-shadow: 0px 40px 50px #5ce1e6;
 }
 
@@ -230,6 +269,7 @@ i {
   background-image: radial-gradient(at 70% 40%, white, #5ce1e6, #5ce1e6);
   transition: 1s;
   z-index: 100;
+  animation: wave 5s ease-in-out infinite !important;
 }
 
 .blue-round2:hover {
@@ -247,6 +287,7 @@ i {
   background-image: radial-gradient(at 70% 40%, white, #5ce1e6, #5ce1e6);
   transition: 1s;
   z-index: 100;
+  animation: wave 5s ease-in-out infinite !important;
 }
 
 .blue-round3:hover {
@@ -328,15 +369,14 @@ i {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  padding: 15px 20px;
+  padding: 20px 20px;
   border-radius: 20px;
   margin: 10px;
   cursor: pointer;
-  transition: 0.4s !important;
+  transition: 0.5s !important;
 }
 
 .sect2-right-sub:hover {
-  padding: 30px 20px;
   background-color: rgb(48, 46, 46);
 }
 .sect2-right-sub:hover p {
@@ -459,10 +499,20 @@ i {
 
 .sect4-right {
   position: relative;
+  animation: spin 20s infinite linear;
+  /* transition: 1s ease; */
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .sect4-right .img-bg {
   width: 60%;
-  overflow-x: hidden !important;
+  /* overflow-x: hidden !important; */
   position: absolute !important;
   top: 50% !important;
   left: 50% !important;
@@ -476,6 +526,15 @@ i {
   box-shadow: 1px 0px 50px #5ce1e6;
 }
 
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .sec4-right-img-div1 {
   position: absolute;
   left: 80px;
@@ -484,9 +543,11 @@ i {
   cursor: pointer;
   transition: 0.5s !important;
   border-radius: 25px;
+  animation: spin-reverse 20s infinite linear;
+  /* animation:spin 10s infinite linear; */
 }
 .sec4-right-img-div1:hover {
-  width: 250px;
+  width: 220px;
   box-shadow: 0px 0px 10px #5ce1e6;
 }
 .sec4-right-img1 {
@@ -500,11 +561,13 @@ i {
   top: -40px;
   cursor: pointer;
   transition: 0.5s !important;
-  width: 260px;
+  width: 240px;
   border-radius: 25px;
+  animation: spin-reverse 20s infinite linear;
+  z-index: 1;
 }
 .sec4-right-img-div2:hover {
-  width: 300px;
+  width: 260px;
   box-shadow: 0px 0px 10px #5ce1e6;
 }
 .sec4-right-img2 {
@@ -518,11 +581,12 @@ i {
   bottom: -100px;
   cursor: pointer;
   transition: 0.5s !important;
-  width: 260px;
+  width: 230px;
   border-radius: 25px;
+  animation: spin-reverse 20s infinite linear;
 }
 .sec4-right-img-div3:hover {
-  width: 320px;
+  width: 250px;
   box-shadow: 0px 0px 10px #5ce1e6;
 }
 .sec4-right-img3 {
@@ -617,14 +681,14 @@ i {
 .sect6-icon-div img {
   width: 180px;
   opacity: 0.3 !important;
-  transition: 0.4s;
+  transition: 0.5s !important;
   cursor: pointer;
   z-index: 100 !important;
 }
 
 .sect6-icon-div img:hover {
-  mix-blend-mode: color-dodge !important;
-  z-index: 100 !important;
+  /* mix-blend-mode: color-dodge !important; */
+  /* z-index: 1000 !important; */
   opacity: 1 !important;
 }
 
@@ -645,7 +709,7 @@ i {
 .sect6-content-right {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 /* ////////////////    footer  ////////////////////// */
@@ -663,13 +727,13 @@ i {
 
 .foot-right-content1 h5,
 .foot-right-content2 h5,
-.foot-right-content3 h5{
+.foot-right-content3 h5 {
   transition: 0.5s;
-  cursor:default;
+  cursor: default;
 }
 .foot-right-content1 h5:hover,
 .foot-right-content2 h5:hover,
-.foot-right-content3 h5:hover{
+.foot-right-content3 h5:hover {
   text-shadow: 0px 0px 15px #5ce1e6;
 }
 .foot-left {
@@ -688,6 +752,26 @@ i {
 }
 .foot-left-content h1 {
   font-size: 50px;
+  margin-left: 60px !important;
+}
+
+.nav-logo-left-text2 {
+  position: relative;
+  transition: 0.5s !important;
+}
+
+.nav-logo-left-text2 a img {
+  position: absolute;
+  left: -90px !important;
+  top: 0px;
+}
+
+.nav-logo-left-text2:hover a img {
+  transform: rotate(180deg);
+}
+
+.nav-logo-left-text2:hover {
+  text-shadow: 0px 0px 10px white;
 }
 
 .foot-left-p {
@@ -705,6 +789,10 @@ i {
 .foot-2 p span.copyright {
   font-size: 15px;
   font-weight: 200;
+}
+
+.foot-brand img {
+  transition: transform 1s !important;
 }
 
 .foot-left-link1 i,
@@ -776,5 +864,25 @@ img.ellipse5 {
   position: absolute;
   right: 0%;
   top: 1900px;
+  z-index: -1;
+}
+
+/* ///////////    cursor background   //////////// */
+
+.blob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: #1f4c65;
+  filter: blur(75px);
+  transition: all 450ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
   z-index: -1;
 }
